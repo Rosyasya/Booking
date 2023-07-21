@@ -1,6 +1,7 @@
 import './home.scss'
 import { Inter } from 'next/font/google'
 import { Roboto } from 'next/font/google'
+import Card from "@/app/components/Card/Card";
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500'] })
@@ -50,73 +51,7 @@ export default function Home() {
         </div>
 
         <div className={`grid ${roboto.className}`}>
-          <div className="grid__card">
-            <div className="grid__card-options">
-              <a href="#">#394017</a>
-              <button>menu</button>
-            </div>
-
-            <h2 className="grid__card-title">Guy Hawkins</h2>
-
-            <div className="grid__card-info">
-              <div className="grid__card-info-container">
-                <h5>Type room</h5>
-                <h4>Superior</h4>
-              </div>
-              <div className="grid__card-info-container">
-                <h5>Room #</h5>
-                <h4>202</h4>
-              </div>
-              <div className="grid__card-info-container">
-                <h5>Guests</h5>
-                <h4>2</h4>
-              </div>
-              <div className="grid__card-info-container">
-                <h5>Payment method</h5>
-                <h4>Credit card</h4>
-              </div>
-              <div className="grid__card-info-container">
-                <h5>Source</h5>
-                <h4>Reception</h4>
-              </div>
-            </div>
-
-            <div className="grid__card-date">
-              <div className="grid__card-date-container">
-                <h4>9-9-2022</h4>
-                <h4>1:00 PM</h4>
-              </div>
-              <div className="grid__card-date-container">
-                <h4>4</h4>
-                <h4>nights</h4>
-              </div>
-              <div className="grid__card-date-container">
-                <h4>13-9-2022</h4>
-                <h4>11:00 PM</h4>
-              </div>
-            </div>
-
-            <div className="grid__card-price">
-              <div className="grid__card-price-container">
-                <h4 className="grid__card-price-container-title">Sub Total</h4>
-                <h4>$800</h4>
-              </div>
-              <div className="grid__card-price-container">
-                <h4 className="grid__card-price-container-title">Advance Payment</h4>
-                <h4>$100</h4>
-              </div>
-              <div className="grid__card-price-container">
-                <h4 className="grid__card-price-container-title">Discount</h4>
-                <h4>$50</h4>
-              </div>
-              <div className="grid__card-price-container">
-                <h4 className="grid__card-price-container-title">Total</h4>
-                <h4>$700</h4>
-              </div>
-            </div>
-
-            <a className="grid__card-link" href="#">Check out</a>
-          </div>
+          <Card />
         </div>
       </main>
 
