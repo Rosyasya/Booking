@@ -1,0 +1,37 @@
+.navigation {
+  background: white;
+  width: 100%;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 10vh;
+  }
+
+  &__links {
+    ul {
+      display: flex;
+
+      a {
+        padding: 12px 24px;
+      }
+
+      a:hover {
+        color: #4250D4;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.active {
+  color: #4250D4;
+}

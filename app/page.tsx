@@ -1,4 +1,4 @@
-import './home.scss'
+import './style.scss'
 import { Inter } from 'next/font/google'
 import { Roboto } from 'next/font/google'
 import Card from "@/app/components/Card/Card";
@@ -7,29 +7,44 @@ const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500'] })
 
 
-export default function Home() {
+export default function Booking() {
+  const booking: Array<IBooking> = [
+    {
+      id: 1,
+      user: 'First User',
+      roomType: 'Single',
+      roomNum: 103,
+      guestAmount: 1,
+      payment: 'Credit card',
+      source: 'Reception',
+      dateFrom: new Date(),
+      daysAmount: 3,
+      dateTo: new Date(),
+      subTotal: 1300,
+      advancePayment: 300,
+      discount: 50,
+      total: 1000,
+    },
+    {
+      id: 2,
+      user: 'Second User',
+      roomType: 'Duo',
+      roomNum: 105,
+      guestAmount: 2,
+      payment: 'Credit card',
+      source: 'Reception',
+      dateFrom: new Date(),
+      daysAmount: 7,
+      dateTo: new Date(),
+      subTotal: 1700,
+      advancePayment: 600,
+      discount: 100,
+      total: 2000,
+    },
+  ]
+
   return (
     <>
-      <nav>
-        <div className={`navigation ${roboto.className}`}>
-          <div className="navigation__container">
-            <nav className="navigation__links">
-              <ul>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Guests</a></li>
-                <li><a href="#">Booking</a></li>
-              </ul>
-            </nav>
-            <div className="navigation__user">
-              <p>User Name</p>
-              <p>bell</p>
-              <p>menu</p>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       <header>
         <div className={`header ${roboto.className}`}>
           <h2 className="header__title">Bookings</h2>
@@ -51,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className={`grid ${roboto.className}`}>
-          <Card />
+          {booking.map(item => <Card booking={item} />)}
         </div>
       </main>
 
