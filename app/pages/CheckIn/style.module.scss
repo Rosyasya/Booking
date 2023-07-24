@@ -1,0 +1,29 @@
+.page__header {
+  margin: 0 auto;
+  padding: 28px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__info {
+    display: flex;
+    gap: 24px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    h3:first-child {
+      color: #7C7D8E;
+    }
+
+    h3:last-child {
+      color: #4250D4;
+    }
+  }
+}

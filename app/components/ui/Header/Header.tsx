@@ -14,7 +14,7 @@ const Header = () => {
                             <li><a href="#">Reports</a></li>
                             <li><a href="#">Rooms</a></li>
                             <li><a href="#">Guests</a></li>
-                            <li><a href="../pages/Booking" className={styles.active}>Booking</a></li>
+                            <li><a href="../pages/Booking">Booking</a></li>
                         </ul>
                     </nav>
                     <div className={styles.navigation__user}>

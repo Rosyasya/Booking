@@ -1,8 +1,7 @@
 import Card from "@/app/components/Card/Card";
-import {Inter, Roboto} from "next/font/google";
+import {Roboto} from "next/font/google";
 import styles from './style.module.scss';
 
-const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500'] })
 
 const Booking = () => {
@@ -46,7 +45,7 @@ const Booking = () => {
             <header>
                 <div className={`${styles.header} ${roboto.className}`}>
                     <h2 className={styles.header__title}>Bookings</h2>
-                    <button className={styles.header__button}>Create booking</button>
+                    <a href="./CheckIn" className={styles.header__button}>Create booking</a>
                 </div>
             </header>
 
@@ -58,8 +57,8 @@ const Booking = () => {
                     </div>
 
                     <div className={styles.options__switch}>
-                        <button className="switch__button"></button>
-                        <button className="switch__button"></button>
+                        <button></button>
+                        <button></button>
                     </div>
                 </div>
 

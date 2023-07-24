@@ -1,7 +1,6 @@
 .header {
   margin: 0 auto;
-  padding: 20px 0px;
-  width: 90%;
+  padding: 20px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,9 +23,8 @@
 }
 
 .options {
-  width: 90%;
   margin: 0 auto;
-  padding: 35px 0px 0px 0px;
+  padding: 35px 48px 0px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,11 +57,9 @@
 }
 
 .grid {
-  width: 90%;
   margin: 0 auto;
-  padding: 24px 0px 40px 0px;
+  padding: 24px 48px 40px 48px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 24px;
 }
