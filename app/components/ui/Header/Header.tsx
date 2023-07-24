@@ -10,10 +10,11 @@ const Header = () => {
                 <div className={styles.navigation__container}>
                     <nav className={styles.navigation__links}>
                         <ul>
-                            <li><a href="./Home">Reports</a></li>
+                            <li><a href="../">Home</a></li>
+                            <li><a href="#">Reports</a></li>
                             <li><a href="#">Rooms</a></li>
                             <li><a href="#">Guests</a></li>
-                            <li><a href="/" className={styles.active}>Booking</a></li>
+                            <li><a href="../pages/Booking" className={styles.active}>Booking</a></li>
                         </ul>
                     </nav>
                     <div className={styles.navigation__user}>

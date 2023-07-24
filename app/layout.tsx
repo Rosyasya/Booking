@@ -1,6 +1,6 @@
-import './globals.scss'
+import './styles/globals.scss'
 import type { Metadata } from 'next'
-import Header from "@/app/components/Header/Header";
+import Header from "@/app/components/ui/Header/Header";
 
 export const metadata: Metadata = {
   title: 'Booking',
